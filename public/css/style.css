@@ -214,9 +214,9 @@ header .btn {
 
   margin: 80px auto;
   width: 30%;
-  height: 10vh;
+  height: 20vh;
   color: #fff;
-  background-color: #1f1f1e;
+  /* background-color: #1f1f1e; */
 }
 
 .join-header {
@@ -370,11 +370,7 @@ a {
   width: 100%;
 }
 
-.side-bar {
-  /* padding: 1.5rem; */
-  /* flex: 1; */
-  /* width: 20%; */
-}
+
 
 .searchButton {
   width: 4.3vh;
@@ -396,6 +392,8 @@ a {
   width: 100%;
   border-radius: 20px;
   box-shadow: #0f7ba6 2px;
+  display: flex;
+  flex-direction: column;
 }
 
 .icons {
@@ -427,7 +425,7 @@ section {
   }
   
   h1 {
-	font-size: 2.5em;
+	font-size: 2rem;
 	text-decoration: underline;
   }
   
@@ -449,6 +447,7 @@ section {
 	letter-spacing: 0.2em;
 	animation: flicker 1s ease-in-out 10 alternate;
 	margin-bottom: .5rem;
+  font-size: 3rem;
   }
   
   .text-shadow:hover {
@@ -476,3 +475,287 @@ section {
 	}
   }
   
+
+  #white-keyset {
+    width: 100vw;
+    height: 40vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+#black-keyset {
+    width: 80vw;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+}
+.black-key {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    width: 6%;
+    height: 50%;
+    margin-left: 6%;
+    border: 5px gray solid;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+}
+.white-key {
+    width: calc(10% - 10px);
+    height: calc(100% - 5px);
+    margin: 0;
+    padding: 0;
+    border: 5px gray solid;
+    
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.piano{
+  flex: 1;
+  position: relative;
+  /* height: 50%;
+  width: 50%; */
+  
+}
+
+
+.chat-controls{
+  flex: 1;
+}
+
+
+/* CSS */
+.button-30-1 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30-1:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30-1:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30-2:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.button-30-2 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30-2:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30-2:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30-2:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.button-controls{
+display: flex;
+position: absolute;
+bottom: 0;
+gap: 2rem;
+justify-content: space-around;
+align-items: center;
+margin: 0 auto;
+
+left: 50%;
+transform: translate(-50%, 0%);
+}
+
+.hide-1{
+  display: none;
+  background-color: #D6D6E7;
+  font-size: 1.1rem;
+  padding: 1rem;
+}
+.hide-2{
+  display: none;
+  background-color: #D6D6E7;
+  font-size: 1.1rem;
+  padding: 1rem;
+}
+
+.button-30-1:hover + .hide-1{
+  display: block;
+}
+.button-30-2:hover + .hide-2{
+  display: block;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: absolute;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 300px;
+  margin-top: 2rem;
+  color: white;
+  font-size: 1rem;
+  background-color: #192733;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+}
+
+.hover-text:hover .tooltip-text {
+  visibility: visible;
+}
+
+#top {
+  top: -40px;
+  left: -50%;
+}
+
+#bottom {
+  top: 25px;
+  left: -50%;
+}
+
+#left {
+  top: -8px;
+  right: 120%;
+}
+
+#right {
+  top: -8px;
+  left: 120%;
+}
+
+.hover-text {
+  position: relative;
+  display: inline-block;
+  margin: 40px;
+  font-family: Arial;
+  text-align: center;
+}
